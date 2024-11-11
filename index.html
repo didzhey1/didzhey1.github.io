@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f7d6d6;
-            background-image: url(https://img.freepik.com/free-photo/3d-dark-grunge-display-background-with-smoky-atmosphere_1048-16218.jpg)
+            background-image: url(smkbg.jpg);
         }
         header {
             background-color: #333;
@@ -24,7 +24,7 @@
             background-color: #444;
         }
         nav a {
-            color: #fff;
+            color: #ffffff;
             padding: 1rem;
             text-decoration: none;
         }
@@ -35,8 +35,21 @@
             padding: 1rem;
             margin: 1rem auto;
             max-width: 800px;
-            background-color: #fff;
+            background-color: #838080;
+            
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: rgb(255, 255, 255);
+            opacity: 1;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+        }
+        .about img {
+            margin-left: 1rem;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
         }
         footer {
             text-align: center;
@@ -63,9 +76,12 @@
         <h2>Home</h2>
         <p>Hi there! I'm Juan De La Cruz, a senior high school student passionate about Science, Technology, Engineering and Mathematics. Explore my site to learn more about my projects, achievements, and future goals.</p>
     </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I've always been fascinated by how things work from the background. At school, I'm involved in the club. Outside of school, I enjoy playing video games.</p>
+    <section id="about" class="about">
+        <div>
+            <h2>About Me</h2>
+            <p>I've always been fascinated by how things work from the background. At school, I'm involved in the club. Outside of school, I enjoy playing video games.</p>
+        </div>
+        <img src="https://m.media-amazon.com/images/I/71v-TGmm77L.jpg" alt="heisenberg">
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -90,7 +106,6 @@
     </section>
     <footer>
         <p>© 2024 JDC. All rights reserved.</p>
-    </div>
     </footer>
 </body>
 </html>
