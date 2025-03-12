@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7d6d6;
-            background-image: url(smkbg.jpg);
+            background-color: #c2934c7c;
+            background-image: url(https://getwallpapers.com/wallpaper/full/f/a/b/268564.jpg);
         }
         header {
             background-color: #333;
@@ -19,94 +19,125 @@
             text-align: center;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
         nav a {
-            color: #ffffff;
-            padding: 1rem;
+            color: #fff;
+            margin: 0 1rem;
             text-decoration: none;
         }
-        nav a:hover {
-            background-color: #e40f0f;
-        }
-        section {
-            padding: 1rem;
-            margin: 1rem auto;
-            max-width: 800px;
-            background-color: #838080;
-            
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: #c7c5bf;
+            padding: 2rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: rgb(255, 255, 255);
-            opacity: 1;
         }
-        .about {
+        .about-me {
             display: flex;
             align-items: center;
         }
-        .about img {
-            margin-left: 1rem;
+        .about-me img {
+            margin-left: 2rem;
             max-width: 200px;
-            height: auto;
-            border-radius: 10px;
+            border-radius: 50%;
         }
         footer {
-            text-align: center;
-            padding: 1rem 0;
             background-color: #333;
             color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .project, .blog-post {
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#blog">Blog</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
+
+    <div class="container" id="home">
         <h2>Home</h2>
-        <p>Hi there! I'm Juan De La Cruz, a senior high school student passionate about Science, Technology, Engineering and Mathematics. Explore my site to learn more about my projects, achievements, and future goals.</p>
-    </section>
-    <section id="about" class="about">
-        <div>
-            <h2>About Me</h2>
-            <p>I've always been fascinated by how things work from the background. At school, I'm involved in the club. Outside of school, I enjoy playing video games.</p>
+        <p>Hi! I'm Juan De La Cruz, and this is my personal website where I share my projects, blog posts, and more about myself.</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <div>
+                <p>Here's a little bit about me. I'm a senior high school student with interests in web development, graphic design, and robotics. My goals include pursuing a degree in computer science and working on innovative tech projects.</p>
+                <h3>Academic Achievements</h3>
+                <ul>
+                    <li>Valedictorian, Class of 2024</li>
+                    <li>First Place in Regional Science Fair, 2023</li>
+                    <li>Top Scorer in National Math Olympiad, 2022</li>
+                    <li>Recipient of the Excellence in Technology Award, 2021</li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/originals/a8/f1/50/a8f150eb5e8974d45f799541b1b8ed67.jpg" alt="Juan De La Cruz">
         </div>
-        <img src="https://m.media-amazon.com/images/I/71v-TGmm77L.jpg" alt="heisenberg">
-    </section>
-    <section id="projects">
+    </div>
+
+    <div class="container" id="projects">
         <h2>Projects</h2>
-        <p>One of my recent projects involved creation of a Website. This hands-on experience was invaluable in understanding how the web works.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K1uuK4QdvGY?si=9bMFOYrttCnLLoD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <p>I was awarded a Nobel Prize for Curing Cancer. I also completed a certification in Microsoft Azure Fundamentals.</p>
-    </section>
-    <section id="blog">
+        <p>Check out some of my projects below:</p>
+        <div class="project">
+            <h3><a href="https://github.com/jdc/project1">Project 1: Personal Portfolio</a></h3>
+            <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/jdc/project2">Project 2: Weather App</a></h3>
+            <p>A weather application that provides real-time weather updates using an API. Built with React.js.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/jdc/project3">Project 3: Robotics Challenge</a></h3>
+            <p>A robotics project where I programmed a robot to navigate through a maze using sensors and algorithms.</p>
+        </div>
+    </div>
+
+    <div class="container" id="blog">
         <h2>Blog</h2>
-        <p>My Research Journey: Exploring Acoustics through Fast Fourier Transform</p>
-        <p>Reflections on My High School Experience: Growth and Learning</p>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out my latest [type of work, e.g., photography, coding projects].</p>
-    </section>
-    <section id="contact">
+        <p>Welcome to my blog! Here are some of my latest posts:</p>
+        <div class="blog-post">
+            <h3><a href="https://jdc.com/blog/post1">Blog Post 1: My Journey into Web Development</a></h3>
+            <p>Sharing my experiences and challenges as I started learning web development.</p>
+        </div>
+        <div class="blog-post">
+            <h3><a href="https://jdc.com/blog/post2">Blog Post 2: Tips for Effective Graphic Design</a></h3>
+            <p>Some useful tips and tricks for creating visually appealing designs.</p>
+        </div>
+        <div class="blog-post">
+            <h3><a href="https://jdc.com/blog/post3">Blog Post 3: Exploring Robotics</a></h3>
+            <p>An overview of my recent robotics projects and what I've learned from them.</p>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
         <h2>Contact</h2>
-        <p>Let's connect! You can reach me at djonantonio.nunez@deped.gov.ph or follow me on Juan Dela Cruz.</p>
-    </section>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email: <a href="mailto:jdc@example.com">jdc@example.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/jdc">Juan De La Cruz</a></li>
+            <li>GitHub: <a href="https://github.com/jdc">Juan De La Cruz</a></li>
+        </ul>
+    </div>
+
     <footer>
-        <p>© 2024 JDC. All rights reserved.</p>
+        <p>© 2024 Juan De La Cruz. All rights reserved.</p>
     </footer>
 </body>
 </html>
